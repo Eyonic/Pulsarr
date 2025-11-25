@@ -22,7 +22,7 @@ A lightweight automation service for Audiobookshelf. Pulsarr connects to the Aud
 ✔ Fully Dockerized
 
 
-TODO fix prowler, make downloading just as easy as radarr & sonarr has
+TODO fix prowler, make downloading just as easy as radarr & sonarr has, make the layout look nice.
 
 
 
