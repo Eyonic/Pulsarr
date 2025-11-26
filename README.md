@@ -6,14 +6,14 @@ A lightweight automation service for Audiobookshelf. Pulsarr connects to the Aud
 
 ✔ Pulls your books list / library
 
-<img src="screenshots/pulsarr.png" width="600">
+<img src="screenshots/bookpage.png" width="600">
 
 
 ✔ Lets you request audiobooks → sends magnet links to Deluge
 
 ✔ Applies the correct Deluge label
 
-<img src="screenshots/pulsarr_2.png" width="600">
+<img src="screenshots/importer.png" width="600">
 
 
 
