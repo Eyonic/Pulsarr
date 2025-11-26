@@ -26,7 +26,14 @@ A lightweight automation service for Audiobookshelf. Pulsarr connects to the Aud
 ✔ Fully Dockerized
 
 
-TODO fix prowler, make downloading just as easy as radarr & sonarr has, make the layout look nice.
+Update
+I fixed Prowler and it works — just in time to find out that there are almost no audiobooks on the public torrent websites…
+
+The New Plan
+- I figured out how torrent magnets work.
+- The websites where I get my audiobooks right now already include all the info needed to make them work, and you don’t need to log in.
+
+So I’m going to make it use those sites by default. And if you have a semi-private torrent site that’s amazing for audiobooks, you can still use Prowlarr.
 
 
 
