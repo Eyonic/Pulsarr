@@ -80,6 +80,15 @@ class BookshelfClient:
     def get_item(self, item_id: str) -> Dict:
         return self._get(f"/api/items/{item_id}")
 
+    def get_series(self, library_id: Optional[str] = None) -> List[Dict]:
+        lib_id = library_id or self._get_library_id()
+        data = self._get(f"/api/libraries/{lib_id}/series")
+        if isinstance(data, dict) and "series" in data:
+            return data.get("series") or []
+        if isinstance(data, dict) and "results" in data:
+            return data.get("results") or []
+        return data if isinstance(data, list) else []
+
     # ----------------------------------------------------------------------
     # UTILITY HELPERS
     # ----------------------------------------------------------------------

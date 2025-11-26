@@ -47,8 +47,51 @@ class Book(BookBase):
     # Narrators as objects
     narrators: List[Narrator] = []
 
+    # Local cached cover (downloaded by backend)
+    cached_cover_url: Optional[str] = None
+
     class Config:
         orm_mode = True
+
+
+class BookSearchResult(BaseModel):
+    id: int
+    title: str
+    author_id: int
+    author_name: str
+    cover_url: Optional[str] = None
+    abs_cover_url: Optional[str] = None
+    cached_cover_url: Optional[str] = None
+
+
+class ExternalBook(BaseModel):
+    title: str
+    cover_url: Optional[str] = None
+    source: str = "itunes"
+
+
+class AuthorMissingBooks(BaseModel):
+    owned: List[Book]
+    missing: List[ExternalBook]
+
+class ActivityEvent(BaseModel):
+    message: str
+    detail: Optional[str] = None
+    source: Optional[str] = None
+    author: Optional[str] = None
+    status: Optional[str] = None
+    timestamp: str
+
+
+class Indexer(BaseModel):
+    id: str
+    name: str
+    url: Optional[str] = None
+    enabled: bool = True
+
+
+class DownloadRequest(BaseModel):
+    title: str
 
 
 # ============================================================
