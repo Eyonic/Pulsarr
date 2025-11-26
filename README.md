@@ -1,45 +1,39 @@
-# Pulsarr
-A lightweight automation service for Audiobookshelf. Pulsarr connects to the Audiobookshelf API, syncs your library, accepts magnet requests, sends downloads to Deluge with labels, and automatically imports completed audiobooks back into Audiobookshelf. Fully Dockerized and hands-free.
+Pulsarr is a lightweight automation service designed for **Audiobookshelf**. It connects directly to the Audiobookshelf API to sync your library, accept audiobook requests, send magnet links to Deluge with appropriate labeling, and automatically import completed downloads back into your Audiobookshelf library. Fully Dockerized, fully automated, and hands-free.
 
+---
 
-✔ Talks directly to Audiobookshelf’s API
+## Features
 
-<img src="screenshots/search-bar.png" width="600">
+✔ **Direct Audiobookshelf API Integration** <img src="screenshots/search-bar.png" width="600">
 
-✔ Pulls your books list / library
+✔ **Automatic Library Syncing** <img src="screenshots/bookspage.png" width="600">
 
-<img src="screenshots/bookspage.png" width="600">
+✔ **Request Audiobooks → Send Magnet Links to Deluge** <img src="screenshots/bookpage.png" width="600">
 
+✔ **Applies the Correct Deluge Label Automatically** <img src="screenshots/importer.png" width="600">
 
-✔ Lets you request audiobooks → sends magnet links to Deluge
+✔ **Moves Finished Downloads Into Your Audiobookshelf Library**
 
-<img src="screenshots/bookpage.png" width="600">
+✔ **Fully Dockerized Deployment**
 
-✔ Applies the correct Deluge label
+---
 
-<img src="screenshots/importer.png" width="600">
+## Update
 
+Prowlarr support has been fixed and is working correctly — just in time for the realization that public torrent sites rarely host audiobooks.
 
+---
 
-✔ Moves finished downloads into the Audiobookshelf library folder
+## The New Plan
 
-✔ Fully Dockerized
-
-
-Update
-I fixed Prowler and it works — just in time to find out that there are almost no audiobooks on the public torrent websites…
-
-The New Plan
-- I figured out how torrent magnets work.
-- The websites where I get my audiobooks right now already include all the info needed to make them work, and you don’t need to log in.
-
-So I’m going to make it use those sites by default. And if you have a semi-private torrent site that’s amazing for audiobooks, you can still use Prowlarr.
+* I now have a better understanding of how magnet links work.
+* The audiobook sources I currently use already provide all required magnet information, and they don’t require authentication.
+* **Pulsarr will use these sources by default.**
+* If you also have a semi-private torrent indexer with strong audiobook support, you can still use Prowlarr for enhanced results.
 
 
 
-
-
-
-
-<a href="https://www.buymeacoffee.com/Eyonic" target="_blank"><img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" ></a>
+<a href="https://www.buymeacoffee.com/Eyonic" target="_blank">
+  <img src="https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png" alt="Buy Me A Coffee" style="height: 41px !important;width: 174px !important;box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;-webkit-box-shadow: 0px 3px 2px 0px rgba(190, 190, 190, 0.5) !important;" >
+</a>
 
