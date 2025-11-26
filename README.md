@@ -4,6 +4,8 @@ A lightweight automation service for Audiobookshelf. Pulsarr connects to the Aud
 
 ✔ Talks directly to Audiobookshelf’s API
 
+<img src="screenshots/search-bar.png" width="600">
+
 ✔ Pulls your books list / library
 
 <img src="screenshots/bookspage.png" width="600">
