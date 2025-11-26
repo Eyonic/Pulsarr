@@ -1,28 +1,32 @@
 Pulsarr is a lightweight automation service designed for **Audiobookshelf**. It connects directly to the Audiobookshelf API to sync your library, accept audiobook requests, send magnet links to Deluge with appropriate labeling, and automatically import completed downloads back into your Audiobookshelf library. Fully Dockerized, fully automated, and hands-free.
 
----
+
 
 ## Features
 
-✔ **Direct Audiobookshelf API Integration** <img src="screenshots/search-bar.png" width="600">
+✔ **Direct Audiobookshelf API Integration** 
+<img src="screenshots/search-bar.png" width="600">
 
-✔ **Automatic Library Syncing** <img src="screenshots/bookspage.png" width="600">
+✔ **Automatic Library Syncing** 
+<img src="screenshots/bookspage.png" width="600">
 
-✔ **Request Audiobooks → Send Magnet Links to Deluge** <img src="screenshots/bookpage.png" width="600">
+✔ **Request Audiobooks → Send Magnet Links to Deluge** 
+<img src="screenshots/bookpage.png" width="600">
 
-✔ **Applies the Correct Deluge Label Automatically** <img src="screenshots/importer.png" width="600">
+✔ **Applies the Correct Deluge Label Automatically** 
+<img src="screenshots/importer.png" width="600">
 
 ✔ **Moves Finished Downloads Into Your Audiobookshelf Library**
 
 ✔ **Fully Dockerized Deployment**
 
----
+
 
 ## Update
 
 Prowlarr support has been fixed and is working correctly — just in time for the realization that public torrent sites rarely host audiobooks.
 
----
+
 
 ## The New Plan
 
